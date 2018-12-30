@@ -6,13 +6,15 @@ module.exports = {
   entry: './app/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'index_bundle.js'
+    filename: 'index_bundle.js',
+    publicPath: '/'
   },
   devServer: {
+    historyApiFallback: true,
     hot: true,
     disableHostCheck: true,
     compress: true,
-    public: 'http://localhost:8081/' // That solved it
+    public: 'http://localhost:8082'
   },
   module: {
     rules: [

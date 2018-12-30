@@ -10,14 +10,17 @@
     ]
   },
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server --port 8082 --open"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.18.0",
     "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "react-dom": "^16.7.0",
+    "react-loading": "^2.0.3",
+    "react-router-dom": "^4.3.1"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
