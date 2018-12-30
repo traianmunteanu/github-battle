@@ -107,8 +107,8 @@ class Popular extends React.Component {
             type="bars"
             color="#d00b1e"
             className="loader-icon"
-            width={100}
-            height={100}
+            width={40}
+            height={40}
           />
         ) : (
           <RepoGrid repos={this.state.repos} />
